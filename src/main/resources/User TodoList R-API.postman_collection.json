@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "4ea37b39-65d5-4930-9b33-5ba72f93abe3",
+		"name": "User TodoList R-API",
+		"description": "StartFragment\n\nhe \"User Data API Collection\" is a comprehensive Postman collection that allows you to interact with the REST API you developed for fetching user comments, posts, and a todo list. It provides a set of well-organized and ready-to-use API endpoints for testing and exploring the functionality of your API.\n\nWith this collection, you can easily perform various operations on user data, such as retrieving comments, posts, and todo list items, filtering data based on specific criteria, and managing CRUD operations for user-related information.\n\nThe collection includes a range of pre-configured requests, each targeting a specific API endpoint and supporting different HTTP methods, such as GET, POST. Additionally, it incorporates examples of request payloads, headers, and query parameters, enabling you to customize and fine-tune your requests as needed.\n\nTo use this collection effectively, you should have a running instance of your REST API project. Once you import the collection into Postman, you can seamlessly test the endpoints, examine the responses, and validate the behavior of your API. You can also leverage Postman's features, such as environment variables and test scripts, to enhance your testing workflow and automate repetitive tasks\n\nEndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24632416"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "REST API GET /:userid /posts/:postid/comments/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "/15/posts/10/comments/",
+							"path": [
+								"15",
+								"posts",
+								"10",
+								"comments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REST API GET /:userid/posts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/15/posts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"15",
+								"posts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "REST API GET /:userid/posts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/user/15/posts",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"15",
+										"posts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Nov 2022 14:09:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 15,\n    \"User_Id\": 2,\n    \"comments\": [],\n    \"Title\": \"eveniet quod temporibus\",\n    \"Body\": \"reprehenderit quos placeatvelit minima officia dolores impedit repudiandae molestiae namvoluptas recusandae quis delectusofficiis harum fugiat vitae\"\n}"
+						}
+					]
+				},
+				{
+					"name": "REST API GET /:userid /todos/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/15/todos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"15",
+								"todos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Example REST API GET /:userid /todos/",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/user/15/todos",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"15",
+										"todos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 30 Nov 2022 14:09:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"User_Id\": 1,\n    \"id\": 15,\n    \"Title\": \"ab voluptatum amet voluptas\",\n    \"Completed\": \"True\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "REST API POST /:userid/posts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"user\":{\r\n\t\t\"id\" : 1,\r\n\t\t\"list_name\" : \"AAAAAAAAAAAALeanne Graham\",\r\n\t\t\"list_username\" : \"Brdet\",\r\n\t\t\"list_email\" : \"Sincere@aprasil.biz\",\r\n\t\t\"list_address_street\" : \"Kulasas Light\",\r\n\t\t\"list_address_suite\" : \"Apsst. 556\",\r\n\t\t\"list_address_city\" : \"Gwenboasdrough\",\r\n\t\t\"list_address_zipcode\" : \"92995483874\",\r\n\t\t\"list_address_geo_lat\" : -37.31555559,\r\n\t\t\"list_address_geo_lng\" : 81.145596,\r\n\t\t\"list_phone\" : null,\r\n\t\t\"list_website\" : null,\r\n\t\t\"list_company_name\" : null,\r\n\t\t\"list_company_catchPhrase\" : null,\r\n\t\t\"list_company_bs\" : null,\r\n\t\t\"list_company_catch_phrase\" : null\r\n\t,\"todos\":[\r\n\t{\r\n\t\"User_Id\" : 1,\r\n\t\t\"id\" : 201,\r\n\t\t\"Title\" : \"deleectus aut autem\",\r\n\t\t\"Completed\" : \"Faslse\"\r\n\t},\r\n\t{\r\n\t\"User_Id\" : 1,\r\n\t\t\"id\" : 202,\r\n\t\t\"Title\" : \"del2ectus aut autem\",\r\n\t\t\"Completed\" : \"Falsse\"\r\n\t}\r\n\t]\r\n\t}\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/15/posts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"15",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REST API POST /:userid/todos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"user\":{\r\n\t\t\"id\" : 1,\r\n\t\t\"list_name\" : \"AAAAAAAAAAAALeanne Graham\",\r\n\t\t\"list_username\" : \"Brdet\",\r\n\t\t\"list_email\" : \"Sincere@aprasil.biz\",\r\n\t\t\"list_address_street\" : \"Kulasas Light\",\r\n\t\t\"list_address_suite\" : \"Apsst. 556\",\r\n\t\t\"list_address_city\" : \"Gwenboasdrough\",\r\n\t\t\"list_address_zipcode\" : \"92995483874\",\r\n\t\t\"list_address_geo_lat\" : -37.31555559,\r\n\t\t\"list_address_geo_lng\" : 81.145596,\r\n\t\t\"list_phone\" : null,\r\n\t\t\"list_website\" : null,\r\n\t\t\"list_company_name\" : null,\r\n\t\t\"list_company_catchPhrase\" : null,\r\n\t\t\"list_company_bs\" : null,\r\n\t\t\"list_company_catch_phrase\" : null\r\n\t,\"todos\":[\r\n\t{\r\n\t\"User_Id\" : 1,\r\n\t\t\"id\" : 201,\r\n\t\t\"Title\" : \"deleectus aut autem\",\r\n\t\t\"Body\" : \"Faslse\"\r\n\t},\r\n\t{\r\n\t\"User_Id\" : 1,\r\n\t\t\"id\" : 202,\r\n\t\t\"Title\" : \"del2ectus aut autem\",\r\n\t\t\"Body\" : \"Falsse\"\r\n\t}\r\n\t]\r\n\t}\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/15/todos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"15",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

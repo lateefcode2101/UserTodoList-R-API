@@ -1,0 +1,128 @@
+{
+	"id": "c57399cd-8c38-4e33-8d1a-f62ea1b5aa08",
+	"name": "codingtest",
+	"timestamp": "2022-11-30T15:42:56.428Z",
+	"collection_id": "24632416-4ea37b39-65d5-4930-9b33-5ba72f93abe3",
+	"folder_id": 0,
+	"environment_id": "24632416-4bef2a93-3e03-40b7-8397-b560b50f3895",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "f144ccf0-1696-4e20-acff-e27231f8e5ca",
+			"name": "REST API GET /:userid /todos/",
+			"url": "http://localhost:8088/15/todos",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				33
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d0659675-a22d-4ee5-9d7b-427bdca88d28",
+			"name": "REST API GET /:userid/posts",
+			"url": "http://localhost:8088/15/posts",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				35
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2b7a3a87-ec96-4e01-ab6e-7d857bc9957a",
+			"name": "REST API POST /:userid/posts",
+			"url": "http://localhost:8088/15/posts",
+			"time": 73,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				73
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "78aa3d85-74c8-48e0-99e1-9b3e47b83726",
+			"name": "REST API POST /:userid/todos",
+			"url": "http://localhost:8088/15/todos",
+			"time": 18,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "41cc3c58-5c22-4d01-8d3d-fc004b4441b2",
+			"name": "New Request",
+			"url": "http://localhost:8088/15/posts/14/comments",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 168,
+	"collection": {
+		"requests": [
+			{
+				"id": "f144ccf0-1696-4e20-acff-e27231f8e5ca",
+				"method": "GET"
+			},
+			{
+				"id": "d0659675-a22d-4ee5-9d7b-427bdca88d28",
+				"method": "GET"
+			},
+			{
+				"id": "2b7a3a87-ec96-4e01-ab6e-7d857bc9957a",
+				"method": "POST"
+			},
+			{
+				"id": "78aa3d85-74c8-48e0-99e1-9b3e47b83726",
+				"method": "POST"
+			},
+			{
+				"id": "41cc3c58-5c22-4d01-8d3d-fc004b4441b2",
+				"method": "GET"
+			}
+		]
+	}
+}
