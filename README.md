@@ -1,1 +1,2 @@
 "# UserTodoList-R-API" 
+UserTodoList-R-API s a Java Spring REST API project that provides endpoints to fetch comments, posts, and a todo list for a user. It allows you to manage and retrieve user-specific data efficiently. The project offers a convenient way to integrate and access user-related information through a standardized RESTful interface.
